@@ -1,0 +1,22 @@
+/* variables */
+:root {
+  --base-color: #26281c;
+  --second-color: #d5cec3;
+  --third-color: #6e796c;
+  --fourth-color: #888d81;
+  --fifth-color: #b55b33;
+  --sixth-color: rgba(38, 40, 28, 0.7);
+}
+
+/* general */
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 90vw;
+    max-width: 1250px;
+    padding: 0.5rem;
+    margin: 0 auto;
+    font-family: 'Encode Sans', sans-serif;
+}
