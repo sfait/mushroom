@@ -69,10 +69,55 @@
     margin-left: 0;
 }
 
+/* hero */
+.hero {
+    height: 80vh;
+    background: url("../img/mushroom.jpg") no-repeat center/cover;
+}
+
+.hero-wrapper {
+    width: 100vw;
+    height: 80vh;
+    color: var(--second-color);
+    font-size: 1.2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.hero-btn {
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    color: var(--second-color);
+    background: var(--sixth-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    background: var(--base-color);
+}
+
 /* media queries*/
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 700px) {
+    /* header */
     .header-wrapper {
         flex-direction: row;
+    }
+
+    /* hero */
+    .hero-wrapper {
+        width: 40vw;
     }
 
 }
