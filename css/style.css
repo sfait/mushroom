@@ -50,6 +50,7 @@
     text-decoration: none;
     text-transform: uppercase;
     color: var(--second-color);
+    transition: 0.3s;
 }
 
 .header a:hover {
@@ -102,6 +103,7 @@ h2 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .hero-btn:hover {
