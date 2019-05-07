@@ -1,10 +1,10 @@
 /* variables */
 :root {
   --base-color: #26281c;
-  --second-color: #d5cec3;
+  --second-color: #fff;
   --third-color: #6e796c;
   --fourth-color: #888d81;
-  --fifth-color: #b55b33;
+  --fifth-color: #D2A167;
   --sixth-color: rgba(38, 40, 28, 0.5);
 }
 
@@ -25,7 +25,7 @@
 
 /* header */
 .header {
-    padding: 1rem 0;
+    padding: 0;
     background: var(--sixth-color);
     position: fixed;
     right: 0;
@@ -47,15 +47,15 @@
     letter-spacing: 2px;
 }
 
-.header a {
+.header-wrapper a {
     text-decoration: none;
     text-transform: uppercase;
     color: var(--second-color);
     transition: 0.3s;
 }
 
-.header a:hover {
-    color: var(--third-color);
+.header-wrapper a:hover {
+    color: var(--fifth-color);
 }
 
 .navigation ul {
@@ -64,6 +64,7 @@
 
 .navigation li {
     margin-left: 1.5rem;
+    font-size: 0.8rem;
     list-style: none;
 }
 
@@ -89,7 +90,7 @@
     justify-content: center;
 }
 
-h2 {
+.hero-header {
     margin: 0;
     font-size: 2.5rem;
     text-transform: uppercase;
@@ -97,10 +98,10 @@ h2 {
 }
 
 .hero-btn {
-    padding: 0.5rem 2rem;
+    margin-top: 1rem;
+    padding: 0.6rem 2.5rem;
     font-size: 1rem;
-    color: var(--second-color);
-    background: var(--sixth-color);
+    background: var(--second-color);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -108,67 +109,72 @@ h2 {
 }
 
 .hero-btn:hover {
-    background: var(--base-color);
+    background: var(--fifth-color);
+}
+
+.hero-btn a {
+    text-decoration: none;
+    color: var(--base-color);
 }
 
 /* about us */
 .about-us-wrapper {
-    padding: 4rem 0;
+    padding: 2.5rem 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .about-us-info {
     width: 100vw;
-    padding: 0 1.5rem;
+    padding: 1rem;
 }
 
-h3 {
+.about-us-info-header {
     margin: 0 0 2rem 0;
+    font-size: 1.5rem;
     position: relative;
 }
 
-h3::before {
+.about-us-info-header::before {
     content: "";
     width: 30%;
-    border: 2px solid var(--base-color);
+    border: 1.5px solid var(--base-color);
     position: absolute;
-    bottom: -15px;
+    bottom: -10px;
 }
 
-.about-us-projects {
+.about-us-benefits {
     width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    padding: 1rem;
 }
 
-.about-us-box {
-    width: 100%;
-    padding: 0 1.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.about-us-box i {
-    padding-right: 2rem;
-    font-size: 2rem;
-}
-
-h4 {
+.about-us-benefits-header {
     margin: 0;
+    font-size: 1.5rem;
 }
+
+.about-us-list {
+    padding: 0;
+    line-height: 2;
+    list-style: none;
+}
+
+.about-us-list i {
+    margin-right: 0.5rem;
+}
+
 
 /* media queries*/
 @media only screen and (min-width: 700px) {
     /* header */
     .header-wrapper {
         flex-direction: row;
+    }
+
+    .navigation li {
+        font-size: 1rem;
     }
 
     /* hero */
@@ -182,17 +188,11 @@ h4 {
     }
 
     .about-us-info {
-        width: 30vw;
+        width: 40vw;
     }
 
-    .about-us-projects {
-        width: 70vw;
-        flex-direction: row;
-        flex-wrap: wrap;
+    .about-us-benefits {
+        width: 40vw;
     }
 
-    .about-us-box {
-        width: 50%;
-        flex-direction: row;
-    }
 }
