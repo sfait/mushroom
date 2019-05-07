@@ -165,6 +165,63 @@
     margin-right: 0.5rem;
 }
 
+/* gallery */
+.gallery-header {
+    font-size: 1.5rem;
+    text-align: center;
+    position: relative;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "a a b b e e" "a a d g e e" "c c c g e e" "c c c f f f";
+}
+
+.a {
+    grid-area: a;
+    height: 30vh;
+    margin: 0.5rem;
+    background: url("../img/mushroom2.jpg") no-repeat center/cover;
+}
+
+.b {
+    grid-area: b;
+    margin: 0.5rem;
+    background: url("../img/forrest2.jpg") no-repeat top/cover;
+}
+
+.c {
+    grid-area: c;
+    margin: 0.5rem;
+    background: url("../img/forrest1.jpg") no-repeat center/cover;
+}
+
+.d {
+    grid-area: d;
+    margin: 0.5rem;
+    background: url("../img/shack.jpg") no-repeat center/cover;
+}
+
+.e {
+    grid-area: e;
+    margin: 0.5rem;
+    background: url("../img/squirrel.jpg") no-repeat center/cover;
+}
+
+.f {
+    grid-area: f;
+    margin: 0.5rem;
+    background: url("../img/nature.jpg") no-repeat center/cover;
+}
+
+.g {
+    grid-area: g;
+    margin: 0.5rem;
+    background: url("../img/birdhouse.jpg") no-repeat center/cover;
+}
+
 
 /* media queries*/
 @media only screen and (min-width: 700px) {
