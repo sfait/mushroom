@@ -237,6 +237,10 @@
 }
 
 /* contact */
+.contact {
+    margin-bottom: 3rem;
+}
+
 .contact-header {
     font-size: 1.5rem;
     text-align: center;
@@ -246,10 +250,11 @@
 .contact-wrapper {
     padding: 1.5rem 0;
     display: flex;
+    flex-direction: column;
 }
 
 .form {
-    width: 70vw;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -290,7 +295,55 @@
 }
 
 .contact-info {
-    width: 30vw;
+    width: 100vw;
+    padding: 2.5rem 0;
+    font-style: normal;
+    position: relative;
+}
+
+.contact-info::after {
+    content: "";
+    height: 100%;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: -2rem;
+}
+
+.contact-info p {
+    margin: 0;
+    line-height: 2;
+}
+
+.contact-info p:first-of-type {
+    line-height: 0;
+}
+
+.contact-info a {
+    color: var(--base-color);
+    text-decoration: none;
+}
+
+.back-to-top {
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    border: 1px solid var(--sixth-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.back-to-top i {
+    color: var(--base-color);
+}
+
+.back-to-top i:hover {
+    color: var(--third-color);
 }
 
 /* media queries*/
@@ -320,6 +373,23 @@
 
     .about-us-benefits {
         width: 40vw;
+    }
+
+    /* contact */
+    .contact-wrapper {
+        flex-direction: row;
+    }
+
+    .form {
+        width: 70vw;
+    }
+
+    .contact-info {
+        width: 30vw;
+    }
+
+    .contact-info::after {
+        border: 0.5px solid var(--fourth-color);
     }
 
 }
