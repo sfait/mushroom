@@ -2,7 +2,7 @@
 :root {
   --base-color: #26281c;
   --second-color: #fff;
-  --third-color: #6e796c;
+  --third-color: #64a43c;
   --fourth-color: #888d81;
   --fifth-color: #D2A167;
   --sixth-color: rgba(38, 40, 28, 0.5);
@@ -76,6 +76,7 @@
 .hero {
     height: 80vh;
     background: url("../img/mushroom.jpg") no-repeat center/cover;
+    margin-bottom: 3rem;
 }
 
 .hero-wrapper {
@@ -118,6 +119,10 @@
 }
 
 /* about us */
+.about-us {
+    margin-bottom: 3rem;
+}
+
 .about-us-wrapper {
     padding: 2.5rem 0;
     display: flex;
@@ -134,6 +139,7 @@
 .about-us-info-header {
     margin: 0 0 2rem 0;
     font-size: 1.5rem;
+    text-transform: uppercase;
     position: relative;
 }
 
@@ -166,10 +172,18 @@
 }
 
 /* gallery */
+.gallery {
+    margin-bottom: 3rem;
+}
+
 .gallery-header {
     font-size: 1.5rem;
     text-align: center;
-    position: relative;
+    text-transform: uppercase;
+}
+
+.gallery-wrapper {
+    padding: 1.5rem 0;
 }
 
 .grid-container {
@@ -222,6 +236,62 @@
     background: url("../img/birdhouse.jpg") no-repeat center/cover;
 }
 
+/* contact */
+.contact-header {
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contact-wrapper {
+    padding: 1.5rem 0;
+    display: flex;
+}
+
+.form {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.form label {
+    padding: 1rem 0 0.2rem 0;
+}
+
+.form label:first-of-type {
+    padding-top: 0;
+}
+
+.form input {
+    width: 80%;
+}
+
+.message {
+    width: 80%;
+    height: 20vh;
+    margin-bottom: 2rem;
+    resize: vertical;
+}
+
+.submit {
+    padding: 0.6rem 2.5rem;
+    font-size: 1rem;
+    background: var(--fifth-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit:hover {
+    background: var(--third-color);
+}
+
+.contact-info {
+    width: 30vw;
+}
 
 /* media queries*/
 @media only screen and (min-width: 700px) {
