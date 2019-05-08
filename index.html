@@ -2,6 +2,7 @@
 <html lang="pl-PL">
 <head>
     <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no"> <!-- jeżeli telefony nie mają być linkami -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mushroom</title>
@@ -40,9 +41,7 @@
             <p>
                 Istnienie grzybów zaobserwowano we wszystkich strefach klimatycznych, przede wszystkim na lądach...
             </p>
-            <button class="hero-btn">
-                <a href="#">Czytaj więcej</a>
-            </button>
+            <a href="#" class="hero-btn">Czytaj więcej</a>
         </div>
     </section>
     <section id="about-us" class="about-us">
@@ -101,23 +100,23 @@
                 <textarea id="message" class="message" placeholder="Message"></textarea>
                 <button class="submit">Wyślij</button>
             </form>
-            <address class="contact-info">
-                <p>
-                    Mushroom House Sp. z o.o.
-                </p>
-                <p>
-                    <br /> ul. Leśna 12, 80-460 Gdańsk
-                    <br /> tel. 501 237 229
-                    <br /> tel. 501 237 230
-                    <br /> e-mail: <a href="mailto:mushroomhouse@gmail.com">mushroomhouse@gmail.com</a>
-                </p>
-                <div class="back-to-top">
-                    <a href="#" title="Wróć na górę">
-                        <span class="fas fa-arrow-up" aria-hidden="true"></span>
-                        <span class="sr-only">Wróć na górę</span>
-                    </a>
-                </div>
-            </address>
+            <div class="contact-info">
+                <address class="address">
+                    <p>
+                        Mushroom House Sp. z o.o.
+                    </p>
+                    <p>
+                        ul. Leśna 12, 80-460 Gdańsk
+                        <br /> tel. <a href="tel:501237229">501 237 229</a>
+                        <br /> tel. <a href="tel:501237230">501 237 230</a>
+                        <br /> e-mail: <a href="mailto:mushroomhouse@gmail.com">mushroomhouse@gmail.com</a>
+                    </p>
+                </address>
+                <a href="#" class="back-to-top" title="Wróć na górę">
+                    <span class="fas fa-arrow-up" aria-hidden="true"></span>
+                    <span class="sr-only">Wróć na górę</span>
+                </a>
+            </div>
         </div>
     </section>
     <footer class="footer">

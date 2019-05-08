@@ -118,6 +118,8 @@
     margin-top: 1rem;
     padding: 0.6rem 2.5rem;
     font-size: 1rem;
+    text-decoration: none;
+    color: var(--base-color);
     background: var(--second-color);
     border: none;
     border-radius: 5px;
@@ -127,11 +129,6 @@
 
 .hero-btn:hover {
     background: var(--fifth-color);
-}
-
-.hero-btn a {
-    text-decoration: none;
-    color: var(--base-color);
 }
 
 /* about us */
@@ -313,7 +310,6 @@
 .contact-info {
     width: 100vw;
     padding: 2.5rem 0;
-    font-style: normal;
     position: relative;
 }
 
@@ -329,10 +325,7 @@
 .contact-info p {
     margin: 0;
     line-height: 2;
-}
-
-.contact-info p:first-of-type {
-    line-height: 0;
+    font-style: normal;
 }
 
 .contact-info a {
