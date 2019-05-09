@@ -13,6 +13,10 @@
     box-sizing: border-box;
 }
 
+body {
+    scroll-behavior: smooth;
+}
+
 .wrapper {
     width: 90vw;
     max-width: 1250px;
@@ -37,7 +41,6 @@
 	width: 1px !important;
 	white-space: nowrap !important;
 }
-
 
 /* header */
 .header {
@@ -355,8 +358,6 @@
     color: var(--third-color);
 }
 
-.sr-only {}
-
 /* footer */
 .footer {
     background: var(--base-color);
@@ -441,6 +442,10 @@
     /* footer */
     .footer-wrapper {
         flex-direction: row;
+    }
+
+    .social-icons a {
+        text-decoration: none;
     }
 
     .social-icons span {

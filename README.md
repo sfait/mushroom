@@ -12,7 +12,6 @@ Website Mushroom House.
 * new grid
 * photos - add alt
 * animations
-* arrow back-to-top - add slow mode
 * form - add validation
 * problem with header in 320px (rwd)
 
