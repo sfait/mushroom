@@ -452,3 +452,20 @@ body {
         margin-left: 0.5rem;
     }
 }
+
+@media only screen and (max-width: 450px) {
+    /* header */
+    .navigation ul {
+        flex-wrap: wrap;
+        line-height: 2;
+    }
+
+    .navigation li {
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
+
+    .navigation li:first-of-type {
+        margin-left: 1rem;
+    }
+}

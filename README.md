@@ -13,6 +13,5 @@ Website Mushroom House.
 * photos - add alt
 * animations
 * form - add validation
-* problem with header in 320px (rwd)
 
 **Link:** https://sfait.github.io/mushroom/
