@@ -8,6 +8,13 @@ Website Mushroom House.
 * CSS
 * JavaScript
 
+**Browsers:**
+* Mozilla Firefox
+* Google Chrome 
+* Microsoft Edge
+* Opera
+* Safari
+
 **To do list:**
 * new grid
 * photos - add alt
