@@ -1,4 +1,3 @@
-
 /* variables */
 :root {
   --base-color: #26281c;
@@ -240,13 +239,13 @@ body {
 }
 
 .grid-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-areas: "a a b b e e" "a a d g e e" "c c c g e e" "c c c f f f";
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "a a b b e e" "a a d g e e" "c c c g e e" "c c c f f f";
 }
 
 .a {
