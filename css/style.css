@@ -459,6 +459,7 @@ body {
     /* header */
     .navigation ul {
         line-height: 2;
+        padding: 0;
     }
 
     .navigation li {
