@@ -44,6 +44,7 @@ body {
 
 /* header */
 .header {
+    width: 100vw;
     padding: 0;
     background: var(--sixth-color);
     position: fixed;
@@ -53,6 +54,7 @@ body {
 }
 
 .header-wrapper {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -453,19 +455,14 @@ body {
     }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 700px) {
     /* header */
     .navigation ul {
-        flex-wrap: wrap;
         line-height: 2;
     }
 
     .navigation li {
-        font-size: 1rem;
-        margin-left: 1rem;
-    }
-
-    .navigation li:first-of-type {
+        font-size: 0.9rem;
         margin-left: 1rem;
     }
 }
