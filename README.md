@@ -10,15 +10,9 @@ Website Mushroom House.
 
 **Browsers:**
 * Mozilla Firefox
-* Google Chrome 
+* Google Chrome
 * Microsoft Edge
 * Opera
 * Safari
-
-**To do list:**
-* new grid
-* photos - add alt
-* animations
-* form - add validation
 
 **Link:** https://sfait.github.io/mushroom/
