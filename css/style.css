@@ -241,83 +241,13 @@ body {
 }
 
 .gallery-wrapper {
-    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
 }
 
-.grid-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas: "a a b b e e" "a a d g e e" "c c c g e e" "c c c f f f";
-}
-
-.a {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-area: a;
-    height: 30vh;
-    margin: 0.5rem;
-    background: url("../img/mushroom2.jpg") no-repeat center/cover;
-}
-
-.b {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 2;
-    grid-area: b;
-    margin: 0.5rem;
-    background: url("../img/forrest2.jpg") no-repeat top/cover;
-}
-
-.c {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-area: c;
-    margin: 0.5rem;
-    background: url("../img/forrest1.jpg") no-repeat center/cover;
-}
-
-.d {
-    -ms-grid-row: 2;
-    -ms-grid-column: 3;
-    grid-area: d;
-    margin: 0.5rem;
-    background: url("../img/shack.jpg") no-repeat center/cover;
-}
-
-.e {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 2;
-    grid-area: e;
-    margin: 0.5rem;
-    background: url("../img/squirrel.jpg") no-repeat center/cover;
-}
-
-.f {
-    -ms-grid-row: 4;
-    -ms-grid-column: 4;
-    -ms-grid-column-span: 3;
-    grid-area: f;
-    margin: 0.5rem;
-    background: url("../img/nature.jpg") no-repeat center/cover;
-}
-
-.g {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 4;
-    grid-area: g;
-    margin: 0.5rem;
-    background: url("../img/birdhouse.jpg") no-repeat center/cover;
+.gallery-wrapper img {
+    width: 100%;
+    margin: 0;
 }
 
 /* contact */
@@ -505,6 +435,10 @@ body {
         font-size: 1rem;
     }
 
+    .navigation li:last-of-type {
+        margin-right: 1rem;
+    }
+
     /* hero */
     .hero-wrapper {
         width: 40vw;
@@ -524,6 +458,21 @@ body {
 
     .about-us-benefits {
         width: 40vw;
+    }
+
+    /* gallery */
+    .gallery-wrapper {
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gallery-wrapper img {
+        height: 200px;
+        width: 20rem;
+        /* width: ; */
+        margin: 0.5rem;
     }
 
     /* contact */
